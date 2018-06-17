@@ -1,0 +1,39 @@
+.text
+{
+	-fx-background-color : black;
+	-fx-border-radius : 0;
+	-fx-border-color :  #ffd905;
+	-fx-border-width :  2;
+	-fx-font-family : Manaspace;
+}
+
+.choiceBox, .button
+{
+	-fx-background-color : black;
+	-fx-border-radius : 0;
+	-fx-border-color :  #ffd905;
+	-fx-font-size : 14px;
+	-fx-text-fill : #ffd905;
+	-fx-border-width :  2;
+	-fx-font-family : Manaspace;
+}
+
+.textField
+{
+	-fx-background-color : black;
+	-fx-border-radius : 0;
+	-fx-border-color :  #ffd905;
+	-fx-font-size : 14px;
+	-fx-text-fill : #ffd905;
+	-fx-border-width :  2;
+	-fx-font-family : Manaspace;
+}
+
+@font-face {
+    font-family: 'Manaspace';
+    src: url('manaspace.ttf');
+}
+
+.text {
+    -fx-font-family: "Manaspace";
+}

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="591.0" scaleShape="false" stylesheets="@ControlPane.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unical.mat.map_generator.gui.MapGeneratorGui">
+   <children>
+      <ImageView fitHeight="686.0" fitWidth="339.0" layoutX="-8.0" layoutY="-48.0">
+         <image>
+            <Image url="@img/unnamed-7-.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="labyrinth" fitHeight="185.0" fitWidth="219.0" layoutX="48.0" layoutY="25.0" onMouseClicked="#labyrinthClicked" onMouseExited="#labyrinthExited" onMouseMoved="#labyrinthMoved">
+         <image>
+            <Image url="@img/pacman.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="zelda" fitHeight="198.0" fitWidth="219.0" layoutX="48.0" layoutY="412.0" onMouseClicked="#zeldaClicked" onMouseExited="#zeldaExited" onMouseMoved="#zeldaMoved">
+         <image>
+            <Image url="@img/zelda.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="639.0" fitWidth="278.0" layoutX="324.0">
+         <image>
+            <Image url="@img/950x350-black-solid-color-background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="start" fitHeight="89.0" fitWidth="259.0" layoutX="319.0" layoutY="521.0" onMouseClicked="#startClicked" onMouseExited="#startExited" onMouseMoved="#startMoved">
+         <image>
+            <Image url="@img/imageedit_1_3831042140.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ChoiceBox fx:id="columnSize" layoutX="507.0" layoutY="22.0" prefHeight="19.0" prefWidth="63.0" style=": 0;" styleClass="choiceBox">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#fbff06" height="15.07" radius="8.5175" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <Text fill="#ffd905" layoutX="326.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Column size" wrappingWidth="155.96191313117743">
+         <font>
+            <Font name="Manaspace Regular" size="14.0" />
+         </font></Text>
+      <Text fill="#ffd905" layoutX="327.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Row size" wrappingWidth="127.21615139394999">
+         <font>
+            <Font name="ArcadeClassic" size="14.0" />
+         </font></Text>
+      <Text fill="#ffd905" layoutX="327.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Min distance wall">
+         <font>
+            <Font name="ArcadeClassic" size="14.0" />
+         </font></Text>
+      <Text fill="#ffd905" layoutX="326.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Random seed">
+         <font>
+            <Font name="ArcadeClassic" size="14.0" />
+         </font></Text>
+      <Text fill="#ffd905" layoutX="327.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Random answer set number" wrappingWidth="173.99999982118607">
+         <font>
+            <Font name="ArcadeClassic" size="12.0" />
+         </font></Text>
+      <Text fill="#ffd905" layoutX="326.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Min room size" wrappingWidth="191.95312228053808">
+         <font>
+            <Font name="ArcadeClassic" size="14.0" />
+         </font></Text>
+      <ChoiceBox fx:id="rowSize" layoutX="507.0" layoutY="62.0" prefHeight="19.0" prefWidth="63.0" style=": 0;" styleClass="choiceBox">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#fbff06" height="15.07" radius="8.5175" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <ChoiceBox fx:id="randomAsNum" accessibleRole="CHECK_BOX" layoutX="507.0" layoutY="102.0" prefHeight="19.0" prefWidth="63.0" style=": 0;" styleClass="choiceBox">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#ffff07" height="15.07" radius="8.5175" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <TextField fx:id="minRoomSize" layoutX="507.0" layoutY="142.0" prefHeight="19.0" prefWidth="63.0" styleClass="textField">
+         <font>
+            <Font name="ArcadeClassic" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#fbff06" height="15.07" radius="8.5175" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="minDistanceWall" layoutX="507.0" layoutY="182.0" prefHeight="19.0" prefWidth="63.0" styleClass="textField">
+         <font>
+            <Font name="ArcadeClassic" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#fbff06" height="15.07" radius="8.5175" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="randomSeed" layoutX="507.0" layoutY="222.0" prefHeight="19.0" prefWidth="63.0" styleClass="textField">
+         <font>
+            <Font name="ArcadeClassic" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#fbff06" height="15.07" radius="8.5175" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <Button fx:id="debug" layoutX="503.0" layoutY="412.0" mnemonicParsing="false" onMouseClicked="#debugClicked" prefHeight="33.0" prefWidth="72.0" styleClass="button" text="Debug">
+         <font>
+            <Font name="ArcadeClassic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#ffd505" height="15.07" radius="8.5175" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="error" fill="#ff0505" layoutX="339.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Some parameters are not defined correctly... TRY AGAIN!!" textAlignment="CENTER" wrappingWidth="218.99999480694532">
+         <font>
+            <Font name="Manaspace Regular" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="loading" fill="#ffe500" layoutX="321.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOADING... " wrappingWidth="94.000005915761">
+         <font>
+            <Font name="ArcadeClassic" size="18.0" />
+         </font>
+      </Text>
+      <ProgressIndicator fx:id="loadingInd" layoutX="415.0" layoutY="480.0" prefHeight="31.0" prefWidth="23.0">
+         <effect>
+            <Lighting diffuseConstant="0.86" specularConstant="2.0" specularExponent="0.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#ffd505" />
+               </light>
+            </Lighting>
+         </effect>
+      </ProgressIndicator>
+      <Text fill="#ffd905" layoutX="326.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Encoding Folder">
+         <font>
+            <Font name="ArcadeClassic" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="search" layoutX="507.0" layoutY="262.0" mnemonicParsing="false" onMouseClicked="#searchClicked" prefHeight="32.0" prefWidth="63.0" styleClass="button" text="...">
+         <font>
+            <Font name="ArcadeClassic" size="8.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#ffd505" height="15.07" radius="8.5175" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="#ffd905" layoutX="327.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Pruning percentage" wrappingWidth="192.00000330805779">
+         <font>
+            <Font name="ArcadeClassic" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#ffd905" layoutX="326.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Same orientation percentage" wrappingWidth="155.96191313117743">
+         <font>
+            <Font name="ArcadeClassic" size="13.0" />
+         </font>
+      </Text>
+      <Slider fx:id="pruningPercentage" layoutX="507.0" layoutY="320.0" onMouseReleased="#pruningReleased" prefHeight="14.0" prefWidth="63.0" showTickLabels="true" showTickMarks="true">
+         <effect>
+            <Lighting diffuseConstant="1.95" specularConstant="0.86" specularExponent="0.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#ffd505" />
+               </light>
+            </Lighting>
+         </effect>
+      </Slider>
+      <Slider fx:id="sameOrientationPercentage" layoutX="507.0" layoutY="365.0" onMouseReleased="#orientationReleased" prefHeight="14.0" prefWidth="63.0" showTickLabels="true" showTickMarks="true">
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="0.86" specularExponent="0.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#ffd505" />
+               </light>
+            </Lighting>
+         </effect>
+      </Slider>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
