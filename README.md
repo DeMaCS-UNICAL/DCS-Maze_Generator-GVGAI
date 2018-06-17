@@ -3,6 +3,9 @@
 ## Getting Started (Installation and Usage)
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+### Prerequisites
+It requires only [Java 8&reg;](https://www.java.com/)
+
 ### Installing
 Clone repository
  ```
