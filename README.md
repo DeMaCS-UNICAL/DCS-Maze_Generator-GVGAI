@@ -30,7 +30,7 @@ Environment settings:
 
 Use the MapGenerator Framework:
  - In the `src` folder right click on `MapGeneratorGui.java`
- - Click on `Run as java application`
+ - Click on `Run as Java Application`
 
 ## Credits
  - Francesco Calimeri
