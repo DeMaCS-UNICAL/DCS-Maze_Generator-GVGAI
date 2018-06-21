@@ -1,10 +1,14 @@
 # DCS-Maze_Generator-GVGAI
 
+It requires [Java 8&reg;](https://www.java.com/)
+
+## Release Execution (on Windows)
+ - Download the latest release from [releases](https://github.com/DeMaCS-UNICAL/DCS-Maze_Generator-GVGAI/releases)
+ - Extract the folder
+ - Run the `.jar` file
+ 
 ## Getting Started (Installation and Usage)
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-It requires only [Java 8&reg;](https://www.java.com/)
 
 ### Installing
 Clone repository
@@ -14,19 +18,19 @@ Clone repository
 
 ### Running
 Import project in Eclipse:
-```
-From the "File" menu item click on "Open Project from File System" and select the folder where you cloned the repository
-```
+
+ - Click on the `File` menu item
+ - Click on `Open Project from File System`
+ - Select the folder where you cloned the repository
 
 Environment settings:
-```
-Right click on "resources" folder, then click on "Build Path" and finally on "Use as a Source Folder"
-```
+ - Right click on `resources` folder
+ - Click on `Build Path` and finally on `Use as a Source Folder`
+
 
 Use the MapGenerator Framework:
-```
-In the "src" folder right click on "MapGeneratorGui.java" and run as java application
-```
+ - In the `src` folder right click on `MapGeneratorGui.java`
+ - Click on `Run as java application`
 
 ## Credits
  - Francesco Calimeri
